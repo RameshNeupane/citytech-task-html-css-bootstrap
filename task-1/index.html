@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Details</title>
+  </head>
+  <body>
+    <h1>Employee Details</h1>
+
+    <!-- 
+      Employee details form
+    -->
+    <form action="#">
+      <label for="full-name">Full Name</label>
+      <input
+        type="text"
+        name="full-name"
+        id="full-name"
+        placeholder="Ramesh Neupane"
+        required
+      />
+      <br /><br />
+
+      <label for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="ramesh@example.com"
+        required
+      />
+      <br /><br />
+
+      <label for="designation">Designation</label>
+      <input
+        type="text"
+        name="designation"
+        id="designation"
+        placeholder="Software Engineer"
+        required
+      />
+      <br /><br />
+
+      <label for="contact">Contact</label>
+      <input
+        type="tel"
+        name="contact"
+        id="contact"
+        placeholder="0123456789"
+        required
+      />
+      <br /><br />
+
+      Gender:
+      <input type="radio" name="gender" id="male" value="male" required />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" value="female" required />
+      <label for="female">Female</label>
+      <input type="radio" name="gender" id="other" value="other" required />
+      <label for="other">Other</label>
+      <br /><br />
+
+      Hobbies:
+      <input type="checkbox" name="sports" id="sports" value="sports" />
+      <label for="sports">Sports</label>
+      <input type="checkbox" name="singing" id="singing" value="singing" />
+      <label for="singing">Singing</label>
+      <input type="checkbox" name="dancing" id="dancing" value="dancing" />
+      <label for="dancing">Dancing</label>
+      <input type="checkbox" name="cooking" id="cooking" value="cooking" />
+      <label for="cooking">Cooking</label>
+      <br /><br />
+
+      <label for="country">Country</label>
+      <select name="country" id="country">
+        <option value="Nepal" selected>Nepal</option>
+        <option value="Nepal">India</option>
+        <option value="Nepal">China</option>
+        <option value="Nepal">Bhutan</option>
+      </select>
+      <br /><br />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <title>Employee Details</title>
+  </head>
+  <body>
+    <div class="container d-flex flex-column align-items-center">
+      <h1 class="mt-5 mb-3 text-dark">Employee Details</h1>
+
+      <!-- 
+      Employee details form
+    -->
+      <form action="#" class="w-50 p-5 border border-dark border-3 rounded">
+        <div class="mb-3">
+          <label for="full-name" class="form-label fw-bold">Full Name</label>
+          <input
+            type="text"
+            name="full-name"
+            id="full-name"
+            placeholder="Ramesh Neupane"
+            class="form-control bg-light"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label fw-bold">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="ramesh@example.com"
+            class="form-control bg-light"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="designation" class="form-label fw-bold"
+            >Designation</label
+          >
+          <input
+            type="text"
+            name="designation"
+            id="designation"
+            placeholder="Software Engineer"
+            class="form-control bg-light"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="contact" class="form-label fw-bold">Contact</label>
+          <input
+            type="tel"
+            name="contact"
+            id="contact"
+            placeholder="0123456789"
+            class="form-control bg-light"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <span class="me-3 fw-bold">Gender:</span>
+          <div class="form-check-inline">
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              value="male"
+              class="form-check-input"
+              required
+            />
+            <label for="male" class="form-check-label">Male</label>
+          </div>
+          <div class="form-check-inline">
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="female"
+              class="form-check-input"
+              required
+            />
+            <label for="female" class="form-check-label">Female</label>
+          </div>
+          <div class="form-check-inline">
+            <input
+              type="radio"
+              name="gender"
+              id="other"
+              value="other"
+              class="form-check-input"
+              required
+            />
+            <label for="other" class="form-check-label">Other</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <span class="me-3 fw-bold">Hobbies:</span>
+          <div class="form-check-inline">
+            <input
+              type="checkbox"
+              name="sports"
+              id="sports"
+              value="sports"
+              class="form-check-input"
+            />
+            <label for="sports" class="form-check-label">Sports</label>
+          </div>
+          <div class="form-check-inline">
+            <input
+              type="checkbox"
+              name="singing"
+              id="singing"
+              value="singing"
+              class="form-check-input"
+            />
+            <label for="singing" class="form-check-label">Singing</label>
+          </div>
+
+          <div class="form-check-inline">
+            <input
+              type="checkbox"
+              name="dancing"
+              id="dancing"
+              value="dancing"
+              class="form-check-input"
+            />
+            <label for="dancing" class="form-check-label">Dancing</label>
+          </div>
+
+          <div class="form-check-inline">
+            <input
+              type="checkbox"
+              name="cooking"
+              id="cooking"
+              value="cooking"
+              class="form-check-input"
+            />
+            <label for="cooking" class="form-check-label">Cooking</label>
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label for="country" class="form-label fw-bold">Country</label>
+          <select name="country" id="country" class="form-select bg-light">
+            <option value="Nepal" selected>Nepal</option>
+            <option value="Nepal">India</option>
+            <option value="Nepal">China</option>
+            <option value="Nepal">Bhutan</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="comment" class="form-label fw-bold">Comment</label><br />
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="leave a message"
+            class="form-control bg-light"
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
